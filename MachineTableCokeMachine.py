@@ -1,6 +1,19 @@
 #!/usr/bin/python
 #written on 2018.02.08
 
+#this simple program contains a machine table showing a relationship between inputs and outputs. The machine table looks like this:
+############################################################################################################
+#  Input   #	Present State   #	Switch to State  #	  Output
+# "nickel" #   0          	  #   5              # "what coin would you like to put into the coke machine?"
+# "nickel" #   5          	  #  10              # "what coin would you like to put into the coke machine?"
+# "nickel" #  10          	  #   0              # "you get a coke"
+# "dime"   #   0              #  10              # "what coin would you like to put into the coke machine?"
+# "dime"   #   5              #   0              # "you get a coke"
+# "dime"   #  10              #   0              # "you get a coke and a nickel"
+#  else    #  0,5,10          #   -              # "type either 'nickel' or 'dime' what coin would you like to put into the coke machine?"
+############################################################################################################
+
+
 present_state=0
 coins=["dime","nickel"]
 
