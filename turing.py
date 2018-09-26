@@ -13,7 +13,7 @@ while len(tape)<100:
   if state==0:
     tape.append(0)
     state=1
-  if state==1:
+  elif state==1:
     tape.append(1)
     state=0
 #when in state 0, write 0 (and move right - python automatically moves the pointer) and switch to state 1. 
